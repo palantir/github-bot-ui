@@ -1,0 +1,69 @@
+/**
+ * Copyright 2016-present Palantir Technologies
+ * @license MIT
+ */
+
+@import "node_modules/@blueprintjs/core/dist/variables.scss";
+
+.repository-list {
+  padding-bottom: 1em;
+
+  & > ul {
+    margin: 0;
+    padding: 0 1em;
+    list-style: none;
+  }
+}
+
+.repository {
+  padding: 0.75em;
+  margin-bottom: 1em;
+
+  background-color: $white;
+  border: 1px solid $light-gray1;
+
+  &:hover {
+    box-shadow: 0px 0px 10px $light-gray1;
+  }
+}
+
+.repository-header {
+  display: flex;
+  align-items: center;
+
+  .enabled & {
+    padding-bottom: 0.75em;
+    border-bottom: 1px solid $light-gray1;
+  }
+
+  .repository-name {
+    flex: 1;
+    line-height: 24px; /* account for spinner */
+  }
+
+  .pt-control {
+    width: calc(38px + 2em); /* 38px = switch padding */
+    margin-left: 0.5em;
+    margin-bottom: 0;
+    min-height: 0;
+  }
+
+  .pt-icon-warning-sign {
+    color: $orange3;
+  }
+
+  .pt-icon-tick {
+    color: $green3;
+  }
+}
+
+.repository-details {
+  padding-top: 0.75em;
+}
+
+.repository-list-header {
+  display: flex;
+  h3 {
+    padding-left: 10px;
+  }
+}

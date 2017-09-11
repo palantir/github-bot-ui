@@ -1,0 +1,20 @@
+/**
+ * Copyright 2016-present Palantir Technologies
+ * @license MIT
+ */
+
+@import "./containers/login.scss";
+@import "./components/repo/groupedRepoList.scss";
+@import "./components/repo/repo.scss";
+
+.pt-app {
+  padding: 1em;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: $light-gray5;
+  overflow: auto;
+}

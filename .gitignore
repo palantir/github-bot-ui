@@ -1,0 +1,7 @@
+*.log
+.idea
+# dependencies
+/node_modules/
+
+# builds
+/build/
