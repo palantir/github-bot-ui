@@ -1,5 +1,5 @@
 {
-  "name": "@devtools/github-bot-ui",
+  "name": "github-bot-ui",
   "version": "0.4.4",
   "description": "React+Redux application for GitHub bot UIs",
   "main": "github-bot-ui.js",
