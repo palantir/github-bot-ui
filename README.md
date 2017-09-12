@@ -4,6 +4,8 @@ A React + Redux application that serves as a base for GitHub bot UIs. It
 manages login, provides a page to enable or disable the bot on repositories,
 and has extensibility points for bots that require additional settings.
 
+![Screenshot of GitHub Bot UI](/github-bot-ui.png)
+
 ## Usage
 
 Most user will consume the application as a whole, passing some properties at
