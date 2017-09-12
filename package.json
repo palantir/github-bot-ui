@@ -1,6 +1,6 @@
 {
   "name": "github-bot-ui",
-  "version": "0.4.4",
+  "version": "dynamic",
   "description": "React+Redux application for GitHub bot UIs",
   "main": "github-bot-ui.js",
   "author": "Billy Keyes <bkeyes@palantir.com>",

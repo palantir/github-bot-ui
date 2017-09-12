@@ -1,6 +1,8 @@
 PATH  := ./node_modules/.bin:$(PATH)
 SHELL := /bin/bash
 
+version := $(shell git describe --tags)
+
 build_dir := build
 lib_dir   := $(build_dir)/lib
 
@@ -11,7 +13,7 @@ scss_files := $(wildcard src/*.scss)
 css_bundle := $(build_dir)/github-bot-ui.css
 
 .PHONY: all
-all: check build
+all: clean check build
 
 # Build
 # -----
@@ -23,7 +25,7 @@ $(lib_dir)/%.js: src/%.js
 	babel -d $(lib_dir) src
 
 $(build_dir)/package.json: package.json
-	node scripts/clean-package-json.js $@
+	VERSION=$(version) node scripts/clean-package-json.js $@
 
 $(css_bundle): $(scss_files)
 	node-sass $^ $@
@@ -48,6 +50,10 @@ lint:
 .PHONY: clean
 clean:
 	rm -rf $(build_dir)
+
+.PHONY: print-version
+print-version:
+	@echo $(version)
 
 # Local Development
 # -----------------

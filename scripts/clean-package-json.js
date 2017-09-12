@@ -18,4 +18,8 @@ var packageJson = JSON.parse(fs.readFileSync(input, 'utf-8'));
 packageJson.main = 'lib/index.js';
 delete packageJson.devDependencies;
 
+if (process.env.VERSION) {
+  packageJson.version = process.env.VERSION
+}
+
 fs.writeFileSync(output, JSON.stringify(packageJson, null, 2));
