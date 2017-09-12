@@ -19,7 +19,7 @@ all: clean check build
 # -----
 
 .PHONY: build
-build: $(build_files) $(build_dir)/package.json $(css_bundle)
+build: $(build_files) $(build_dir)/package.json $(css_bundle) $(build_dir)/README.md $(build_dir)/LICENSE
 
 $(lib_dir)/%.js: src/%.js
 	babel -d $(lib_dir) src
