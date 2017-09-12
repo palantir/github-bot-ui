@@ -1,5 +1,8 @@
 # github-bot-ui
 
+[![npm](https://img.shields.io/npm/v/github-bot-ui.svg?style=flat-square)]()
+[![CircleCI](https://img.shields.io/circleci/project/github/palantir/github-bot-ui/master.svg?style=flat-square)]()
+
 A React + Redux application that serves as a base for GitHub bot UIs. It
 manages login, provides a page to enable or disable the bot on repositories,
 and has extensibility points for bots that require additional settings.
