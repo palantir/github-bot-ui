@@ -1,3 +1,7 @@
+**Status:** This project is no longer developed or maintained.
+[GitHub Apps](https://developer.github.com/apps/) natively support the
+functionality of this package.
+
 # github-bot-ui
 
 [![npm](https://img.shields.io/npm/v/github-bot-ui.svg?style=flat-square)](https://www.npmjs.com/package/github-bot-ui)
